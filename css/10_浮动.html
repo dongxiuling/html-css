@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 500px;
+            background: #cccccc;
+        }
+        #child1{
+            width: 100px;
+            height: 100px;
+            background: #f000f0;
+            /* 浮动的元素 脱离文档流 空间释放  */
+            float: right;
+        }
+        #child2{
+            width: 100px;
+            height: 100px;
+            background: #0000ff;
+            float: right;
+        }
+        p{
+            background: yellow;
+            /* left right both */
+            clear:both;
+        }
+        .clear{
+            clear: both;
+        }
+        /* 伪元素默认 行元素  */
+        .clearfix::after{
+            content:"";
+            /* block clear:both才会生效 */
+            display: block; 
+            clear:both;
+        }
+        #main2{
+            background: #000000;
+        }
+
+        #main3{
+            background: #00ff00;
+            /* 溢出隐藏  解决浮动塌陷*/
+            overflow: hidden;
+        }
+
+        /* BFC 块级格式话上下文  
+            触发bfc overflow:hidden;
+            bfc规则去渲染页面 
+                浮动的元素也参与计算高度
+        */
+    </style>
+</head>
+<body>
+    <!-- 浮动导致的塌陷 -->
+    <div id="main" class="clearfix">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+
+    <div id="main2" class="clearfix">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+
+    <div id="main3">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+    
+
+
+    
+    
+
+
+    
+</body>
+</html>

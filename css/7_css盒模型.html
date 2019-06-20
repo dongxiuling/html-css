@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css盒模型</title>
+    <style>
+        .aa{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* 内边距 */
+            /* padding: 30px; */
+            /* 上右下左 */
+            /* padding: 10px 20px 50px 100px; */
+            /* 垂直  水平 */
+            /* padding: 20px 100px ; */
+            /* top right bottom left */
+            padding:30px;
+
+            /* border:5px solid #000; */
+
+            border-width:20px;
+            /* solid 实线  dashed 虚线 dotted 点线 */
+            border-style: dashed;
+            border-color:black;
+
+            border:30px solid blue;
+            /* 外边距 */
+            margin:100px;
+
+            /* margin-top */
+
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            padding: 20px;
+            border:10px solid #000;
+            margin:30px;
+            box-sizing: border-box;  
+
+            /* padding: 20px;
+            border:10px solid #000;
+            margin:30px; */
+
+        }
+       
+       /* 
+            css盒模型 内容+padding+border+margin
+            1.标准盒模型（框模型）
+            width属性 = 内容的宽度 
+            2.怪异盒模型  ie6以及ie6一下的浏览器  不写doctype文档声明的时候
+            width属性 = 内容宽度 + padding +border 
+
+
+            box-sizing:border-box; //怪异盒模型
+                       content-box; //标准盒模型
+
+            
+
+
+        */
+    </style>
+</head>
+<body>
+    
+    <!-- <div>
+        哈哈哈 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+    </div> -->
+
+    <div class="div2">
+        呵呵呵呵
+    </div>
+
+
+    
+</body>
+</html>

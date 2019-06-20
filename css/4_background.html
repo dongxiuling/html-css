@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            height: 800px;
+            /* background: red; */
+
+            /* background-image: url(bbb.jpg);
+            background-repeat: no-repeat;   
+            background-color:red;
+            
+            background-position: -200px 100px; */
+            /* 复合属性 */
+            background: red url(bbb.jpg) no-repeat -200px 300px;
+            
+            /* display: none; */
+            /* display: inline; */
+            /* display: block; */
+            display: inline-block;
+        }
+        div:hover span{
+            display: none;
+        }
+        .show{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /* display: block; */
+            visibility: hidden;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span>
+            划入显示我  划出即没
+        </span>
+        background
+    </div>
+    <span>span ...</span>
+    <h1>fgjhklk</h1>
+
+
+    <div class="show">
+        show me
+    </div>
+    <h1>show me  下边元素</h1>
+
+
+    
+</body>
+</html>

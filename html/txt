@@ -1,0 +1,14 @@
+1.html 页面中内容
+2.css  样式
+3.javascript js  动态效果
+
+
+html  Hyper Text Markup Language
+
+超文本标记语言  创建网页的标记语言
+
+
+标签 1 <html>
+    2 通常情况 <html></html> 成对出现 开始标签 结束标签
+    3 某些标签 没有内容 结束在开始标签中
+
